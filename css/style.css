@@ -20174,13 +20174,13 @@ Sidebar
 .map {
   height: 550px;
 }
-/* ─── babbageandbit logo: invert black logo to white on dark header/footer ── */
+/* ─── babbageandbit logo: invert black-on-white JPEG to white on dark header ── */
 .main-header .logo img,
 .main-header .header-logo img,
 .mobile-menu .logo img,
 .main-footer .footer-logo img,
 .sticky-header .logo img {
-  filter: brightness(0) invert(1);
+  filter: invert(1);
   max-height: 48px;
   width: auto;
 }
