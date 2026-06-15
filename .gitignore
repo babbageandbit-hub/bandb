@@ -1,2 +1,4 @@
 hts-cache/
 *.tmp
+
+.vercel
