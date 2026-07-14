@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Babbage &amp; Bit | We're Building Something Better</title>
+
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+
+<style>
+  :root {
+    --accent: #FF6B1E;
+    --bg: #0D0D0D;
+    --card-bg: #151515;
+    --heading: #FFFFFF;
+    --text: #7A7A7A;
+    --font: "Beatrice Trial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body { height: 100%; }
+
+  body {
+    font-family: var(--font);
+    background-color: var(--bg);
+    background-image:
+      radial-gradient(120% 90% at 50% -10%, rgba(255, 107, 30, 0.14) 0%, rgba(255, 107, 30, 0) 55%),
+      radial-gradient(90% 70% at 100% 110%, rgba(255, 107, 30, 0.08) 0%, rgba(255, 107, 30, 0) 60%);
+    color: var(--text);
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+  }
+
+  .logo {
+    display: inline-block;
+    margin-bottom: 44px;
+  }
+
+  .logo img {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
+
+  .logo .fallback {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--heading);
+    letter-spacing: 0.5px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: rgba(255, 107, 30, 0.10);
+    border: 1px solid rgba(255, 107, 30, 0.28);
+    padding: 8px 18px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+  }
+
+  .badge .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 0 rgba(255, 107, 30, 0.55);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(255, 107, 30, 0.55); }
+    70%  { box-shadow: 0 0 0 10px rgba(255, 107, 30, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 107, 30, 0); }
+  }
+
+  h1 {
+    font-family: var(--font);
+    color: var(--heading);
+    font-size: clamp(30px, 6vw, 50px);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  h1 .accent { color: var(--accent); }
+
+  p {
+    font-size: 16px;
+    margin: 0 auto 18px;
+    max-width: 620px;
+  }
+
+  .divider {
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 3px;
+    margin: 34px auto 30px;
+  }
+
+  .contact-label {
+    color: var(--heading);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  .contacts a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--heading);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 13px 22px;
+    border-radius: 100px;
+    transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  }
+
+  .contacts a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .contacts a .ico { font-size: 17px; line-height: 1; }
+
+  footer {
+    margin-top: 46px;
+    font-size: 13px;
+    color: #55585c;
+    letter-spacing: 0.4px;
+  }
+
+  @media (max-width: 480px) {
+    .contacts a { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="logo">
+      <img src="images/logo/logo-bb.png" alt="Babbage &amp; Bit"
+           onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<span class=&quot;fallback&quot;>Babbage &amp; Bit</span>');" />
+    </div>
+
+    <div class="badge"><span class="dot"></span> Under Maintenance</div>
+
+    <h1>We&rsquo;re Building <span class="accent">Something Better</span></h1>
+
+    <p>Our website is currently being refreshed to deliver a faster, smarter, and more engaging experience.</p>
+    <p>While we put the finishing touches in place, our team is fully operational and available to discuss your project requirements.</p>
+    <p>Thank you for your patience. We look forward to welcoming you back soon.</p>
+
+    <div class="divider"></div>
+
+    <div class="contact-label">Need to connect?</div>
+    <div class="contacts">
+      <a href="mailto:babbageandbit@gmail.com"><span class="ico">&#128231;</span> babbageandbit@gmail.com</a>
+      <a href="tel:+917811830833"><span class="ico">&#128222;</span> +91 78118 30833</a>
+    </div>
+
+    <footer>&copy; Babbage &amp; Bit. All rights reserved.</footer>
+  </main>
+</body>
+</html>
